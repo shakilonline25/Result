@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Search</title>
+  <link rel="stylesheet" href="result.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Malek Molla High School (Azad Nagar)</h1>
+      <p>Welcome to the Student Result Page</p>
+    </div>
+
+    <div class="search-box-horizontal">
+      <div class="left-inputs">
+        <input type="text" id="rollInput" placeholder="Enter Roll Number">
+        <select id="classInput">
+          <option value="">Select Class</option>
+          <option value="class-6">Class-6</option>
+          <option value="class-7">Class-7</option>
+          <option value="class-8">Class-8</option>
+          <option value="class-9">Class-9</option>
+          <option value="class-10">Class-10</option>
+        </select>
+        <select id="groupInput">
+          <option value="">Select Group/Section</option>
+          <option value="Science">Science</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Humanities">Humanities</option>
+          <option value="A">Section-A</option>
+          <option value="B">Section-B</option>
+        </select>
+      </div>
+
+      <div class="right-inputs">
+        <select id="examInput">
+          <option value="">Select Exam</option>
+          <option value="Half-Yearly">Half-Yearly</option>
+          <option value="Yearly">Yearly</option>
+          <option value="Pre-Test">Pre-Test</option>
+          <option value="Test">Test</option>
+        </select>
+        <select id="yearInput">
+          <option value="2025">2025</option>
+        </select>
+        <button onclick="searchStudent()">Search</button>
+      </div>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
