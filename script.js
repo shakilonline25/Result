@@ -46,7 +46,7 @@ async function searchStudent() {
             <tr><th>Name</th><td>${student["Name"]}</td></tr>
             <tr><th>Roll</th><td>${student["Roll"]}</td></tr>
             <tr><th>Exam</th><td>${student["Exam"]}</td></tr>
-            <tr><th>Group</th><td>${student["Group or Section"]}</td></tr>
+            <tr><th>Group or Section</th><td>${student["Group or Section"]}</td></tr>
             <tr><th>Class</th><td>${className}</td></tr>
           </table>
         </div>
@@ -66,3 +66,4 @@ async function searchStudent() {
     resultDiv.innerHTML = `<p style="color:red;">Error fetching data. Please try again later.</p>`;
   }
 }
+
